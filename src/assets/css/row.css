@@ -1,0 +1,49 @@
+.home_row {
+  margin: 20px 0;
+}
+.home_row h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.poster_row {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin: 0 -4px;
+  white-space: nowrap;
+}
+.poster_row::-webkit-scrollbar {
+  display: none;
+}
+.poster {
+  width: calc(100% / 7.5 - 8px);
+  margin: 0 4px 8px;
+  display: inline-block;
+  align-items: stretch;
+}
+.poster_thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.youtube_video {
+  background-color: #222;
+  padding: 20px;
+}
+.youtube_video .btn_primary {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .home_row h2 {
+    font-size: 16px;
+  }
+  .poster {
+    width: calc(100% / 3.2 - 8px);
+  }
+}
